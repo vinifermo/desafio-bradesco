@@ -1,0 +1,23 @@
+package com.desafio.bradesco.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class ViaCepDTO {
+    private String cep;
+    private String logradouro;
+    private String localidade;
+    private String complemento;
+    private String bairro;
+    private String uf;
+    private BigDecimal frete;
+
+}
