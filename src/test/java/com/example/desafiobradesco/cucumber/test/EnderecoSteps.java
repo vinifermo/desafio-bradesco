@@ -1,4 +1,4 @@
-package com.cucumber.test;
+package com.example.desafiobradesco.cucumber.test;
 
 import com.desafio.bradesco.dto.EnderecoRequestDTO;
 import com.desafio.bradesco.dto.EnderecoResponseDTO;

@@ -1,4 +1,4 @@
-package com.desafio.service;
+package com.example.desafiobradesco.desafio.bradesco.service;
 
 import com.desafio.bradesco.dto.EnderecoRequestDTO;
 import com.desafio.bradesco.dto.EnderecoResponseDTO;
