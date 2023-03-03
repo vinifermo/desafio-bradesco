@@ -52,3 +52,14 @@ Norte: R$ 20,83
 Para executar o projeto, é necessário ter o Java 11 e o Maven instalados na máquina.
 
 Clone o repositório:
+```bash
+https://github.com/vinifermo/desafio-bradesco.git
+```
+# Documentação Swagger
+A documentação da API pode ser acessada em http://localhost:8080/swagger-ui.html.
+
+# Testes
+Os testes unitários foram implementados utilizando JUnit5 e os testes automatizados foram implementados utilizando Cucumber  podem ser executados com o comando abaixo:
+```bash
+mvn test
+```
