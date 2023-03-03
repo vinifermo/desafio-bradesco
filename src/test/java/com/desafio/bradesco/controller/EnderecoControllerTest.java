@@ -1,6 +1,5 @@
 package com.desafio.bradesco.controller;
 
-import com.desafio.bradesco.controller.EnderecoController;
 import com.desafio.bradesco.dto.EnderecoRequestDTO;
 import com.desafio.bradesco.dto.EnderecoResponseDTO;
 import com.desafio.bradesco.service.EnderecoService;

@@ -17,14 +17,12 @@ public class ViaCepService {
     private final RestTemplate restTemplate = new RestTemplate();
 
     public ViaCepDTO buscarEnderecoPorCep(String cep) {
-        String url = String.format(VIA_CEP_URL,cep);
-        ViaCepDTO response = restTemplate.getForObject(url, ViaCepDTO.class);
+        String url = String.format(VIA_CEP_URL, cep);
 
-        if (response == null || response.getCep() == null) {
+        try {
+            return restTemplate.getForObject(url, ViaCepDTO.class);
+        } catch (Exception ex) {
             throw new EnderecoNaoEncontrado(String.format(ENDERECO_NAO_ENCONTRADO));
         }
-
-        return response;
     }
-
 }

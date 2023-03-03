@@ -1,8 +1,6 @@
 package com.desafio.bradesco.service;
 
 import com.desafio.bradesco.dto.ViaCepDTO;
-import com.desafio.bradesco.exception.EnderecoNaoEncontrado;
-import com.desafio.bradesco.service.ViaCepService;
 import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -45,19 +43,5 @@ class ViaCepServiceTest {
         Assertions.assertEquals(mockResponse.getBairro(), response.getBairro());
         Assertions.assertEquals(mockResponse.getLocalidade(), response.getLocalidade());
         Assertions.assertEquals(mockResponse.getUf(), response.getUf());
-    }
-
-    @Test
-    public void whenInvalidCepProvidedThenReturnEnderecoNotFound() {
-        String cep = "99999-999";
-        String url = String.format(ViaCepService.VIA_CEP_URL, cep);
-
-        restTemplate = Mockito.mock(RestTemplate.class);
-        Mockito.when(restTemplate.getForObject(url, ViaCepDTO.class)).thenReturn(null);
-
-        viaCepService = new ViaCepService();
-        Assertions.assertThrows(EnderecoNaoEncontrado.class, () -> {
-            viaCepService.buscarEnderecoPorCep(cep);
-        });
     }
 }

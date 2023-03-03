@@ -20,12 +20,11 @@ public enum Regiao {
         this.valorFrete = valorFrete;
     }
 
-    //TODO Trocar Runtime por algum outro trhrowable.
     public static BigDecimal getValorFrete(String estado) {
         return Stream.of(values())
                 .filter(regiao -> regiao.estados.contains(estado))
                 .findFirst()
                 .map(regiao -> regiao.valorFrete)
-                .orElseThrow(()-> new RuntimeException("Não foi possível determinar a região do endereço."));
+                .orElseThrow(() -> new RuntimeException("Não foi possível determinar a região do endereço."));
     }
 }
