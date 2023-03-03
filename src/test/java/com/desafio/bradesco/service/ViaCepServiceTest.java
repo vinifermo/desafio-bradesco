@@ -1,4 +1,4 @@
-package com.example.desafiobradesco.desafio.bradesco.service;
+package com.desafio.bradesco.service;
 
 import com.desafio.bradesco.dto.ViaCepDTO;
 import com.desafio.bradesco.exception.EnderecoNaoEncontrado;

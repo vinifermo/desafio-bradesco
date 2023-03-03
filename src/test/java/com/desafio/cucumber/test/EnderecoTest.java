@@ -1,4 +1,4 @@
-package com.example.desafiobradesco.cucumber.test;
+package com.desafio.cucumber.test;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

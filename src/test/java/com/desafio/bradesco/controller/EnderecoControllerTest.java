@@ -1,4 +1,4 @@
-package com.example.desafiobradesco.desafio.bradesco.controller;
+package com.desafio.bradesco.controller;
 
 import com.desafio.bradesco.controller.EnderecoController;
 import com.desafio.bradesco.dto.EnderecoRequestDTO;
