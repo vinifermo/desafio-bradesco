@@ -10,7 +10,7 @@ public enum Regiao {
     CENTRO_OESTE(List.of("MT", "MS", "GO", "DF"), BigDecimal.valueOf(12.50)),
     NORDESTE(List.of("MA", "PI", "CE", "RN", "PB", "PE", "AL", "SE", "BA"), BigDecimal.valueOf(15.98)),
     SUL(List.of("PR", "SC", "RS"), BigDecimal.valueOf(17.30)),
-    NORTE(List.of("AC", "AM", "AP", "PA", "RO", "RR", "TO"), BigDecimal.valueOf(7.85));
+    NORTE(List.of("AC", "AM", "AP", "PA", "RO", "RR", "TO"), BigDecimal.valueOf(20.83));
 
     public final List<String> estados;
     private final BigDecimal valorFrete;
