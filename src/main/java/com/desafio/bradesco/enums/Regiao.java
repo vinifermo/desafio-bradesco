@@ -27,4 +27,5 @@ public enum Regiao {
                 .map(regiao -> regiao.valorFrete)
                 .orElseThrow(() -> new RuntimeException("Não foi possível determinar a região do endereço."));
     }
+
 }
