@@ -38,7 +38,7 @@ class EnderecoControllerTest {
     }
 
     @Test
-    void buscarEnderecoViaCep_DeveRetornarEnderecoResponseDTO() throws Exception {
+    void whenFindEnderecoViaCepShouldReturnEnderecoResponseDTO() throws Exception {
         EnderecoRequestDTO enderecoRequestDTO = new EnderecoRequestDTO();
         enderecoRequestDTO.setCep("01001-001");
 

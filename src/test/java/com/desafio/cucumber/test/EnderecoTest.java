@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty"})
+@CucumberOptions(features = "src/test/java/com/resource/endereco.feature", plugin = {"pretty"})
 public class EnderecoTest {
 
 }
