@@ -5,7 +5,8 @@ O objetivo principal do desafio é construir uma API REST de consulta de endere�
 
 ## Especificação da API
 A API possui um endpoint para consulta do endereço e cálculo do frete, que pode ser acessado através da URL:
-curl --location --request POST 'http://localhost:8080/v1/consulta-endereco' \
+
+curl --location --request POST 'http://localhost:8080/consulta-endereco' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "cep": "01001000"
